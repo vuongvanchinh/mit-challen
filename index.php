@@ -16,10 +16,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Places </title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/places.css">
+    <link rel="stylesheet" href="css/slider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -37,15 +37,14 @@
 
                 </div>
                 <div class="slider">
-                    
+
                 </div>
             </div>
         </main>
     </div>
     <script src="js/common.js"></script>
-    <script src="js/banner.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/places.js"></script>
-    <script src="js/header.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/timeline.js"></script>
 </body>
 </html>
