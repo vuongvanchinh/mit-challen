@@ -2,10 +2,10 @@
     $string = file_get_contents("data.json");
     $data = json_decode($string,true);
 
-    echo($data[0]["name"]);
-    foreach ($json_a as $key => $value){
-        echo  $key . ':' . $value;
-    }
+    // echo($data[0]["name"]);
+    // foreach ($json_a as $key => $value){
+    //     echo  $key . ':' . $value;
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -20,24 +20,25 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/info.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <header class="header">
             header
         </header>
         <main>
             <div class="timeline">
-            
+                timeline
             </div>
             <div class="content">
                 <div class="info">
-
+                    infor
                 </div>
                 <div class="slider">
-
+                    slider
                 </div>
             </div>
         </main>

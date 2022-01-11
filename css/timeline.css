@@ -1,3 +1,7 @@
-.banner {
-    background-color: red;
+.timeline {
+    background-color: rgb(46, 190, 183);
+    width: 100px;
+    height: 100%;
+    border-right: 1px solid red;
+
 }

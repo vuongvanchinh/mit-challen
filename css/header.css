@@ -1,3 +1,5 @@
 .header {
     background-color: rgb(49, 46, 194);
+    height: 100px;
+    border-bottom: 1px solid  red;
 }

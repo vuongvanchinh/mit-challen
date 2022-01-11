@@ -17,4 +17,19 @@
     height: 100vh;
     overflow: hidden;
     background-color: #fff;
+    flex-direction: column;
+    display: flex;
+
+}
+
+main {
+    flex-grow: 1;
+    background-color: green;
+    display: flex;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: yellow;
+    display: flex;
 }
