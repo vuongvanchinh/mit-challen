@@ -1,8 +1,13 @@
-<?php 
+<?php
+    $string = file_get_contents("data.json");
+    $data = json_decode($string,true);
 
-
-
+    echo($data[0]["name"]);
+    foreach ($json_a as $key => $value){
+        echo  $key . ':' . $value;
+    }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +20,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/places.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -34,5 +40,10 @@
             footer
         </footer>
     </div>
+    <script src="js/common.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/places.js"></script>
+    <script src="js/header.js"></script>
 </body>
 </html>
