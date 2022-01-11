@@ -28,17 +28,19 @@
         <header class="header">
             header
         </header>
-        
-        <div class="banner">
-            banner
-        </div>
+        <main>
+            <div class="timeline">
+            
+            </div>
+            <div class="content">
+                <div class="info">
 
-        <div class="places">
-            places
-        </div>
-        <footer>
-            footer
-        </footer>
+                </div>
+                <div class="slider">
+                    
+                </div>
+            </div>
+        </main>
     </div>
     <script src="js/common.js"></script>
     <script src="js/banner.js"></script>
