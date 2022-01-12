@@ -19,12 +19,16 @@
     background-color: #fff;
     flex-direction: column;
     display: flex;
+    background-image: url('https://wallpaperaccess.com/full/156374.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
 main {
     flex-grow: 1;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
 }
 

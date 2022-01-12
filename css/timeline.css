@@ -1,7 +1,57 @@
 .timeline {
-    background-color: rgb(46, 190, 183);
-    width: 100px;
+    background-color: transparent;
+    width: 80px;
     height: 100%;
     border-right: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%)
+}
 
+.timeline__inner {
+    height: 90%;
+    /* width: 2px; */
+    /* background-color: #fff; */
+}
+
+.tl__lines {
+    --line-w: 3px;
+    height: 100%;
+    width: var(--line-w);
+    background: #f3f3f3;
+    position: relative;
+}
+
+.tl__line {
+
+    --bg: #f3f3f3cc;
+    --w: 12px;
+    /* position: absolute; */
+    background-color: var(--bg);
+    width: var(--w);
+    height: var(--w);
+    border-radius: 50%;
+
+    position: absolute;
+    left: calc((var(--line-w) - var(--w)) / 2);
+    /* transform: translateX(-50%); */
+    transition: all 0.5 ease-in-out;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    line-height: var(--w);
+    /* transform-origin: center center; */
+    color: var(--bg);
+    font-size: 0.875rem;
+
+}
+
+.tl__line:hover, .tl__line.active {
+    --w: 24px;
+    color: #000;
+    transform: translateY(-25%);
+    /* transform: scale(2); */
 }

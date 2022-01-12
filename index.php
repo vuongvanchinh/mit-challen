@@ -31,7 +31,26 @@
         </header>
         <main>
             <div class="timeline">
-                timeline
+                <div class="timeline__inner">
+                    <div class="tl__lines">
+                        <div class="tl__line">1</div>
+                        <div class="tl__line">2</div>
+                        <div class="tl__line">3</div>
+                        <div class="tl__line">4</div>
+                        <div class="tl__line">5</div>
+                        <div class="tl__line">6</div>
+                        <div class="tl__line">7</div>
+                        <div class="tl__line">8</div>
+                        <div class="tl__line">9</div>
+                        <div class="tl__line">10</div>
+                        <div class="tl__line">12</div>
+                        <div class="tl__line">13</div>
+                        <div class="tl__line">14</div>
+                    </div>
+                </div>
+                <div class="timeline__count">
+
+                </div>
             </div>
             <div class="content">
                 <div class="info">
