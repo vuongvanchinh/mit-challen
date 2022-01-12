@@ -1,5 +1,63 @@
 .info {
-    background-color: rgb(4, 72, 99);
-    width: 50%;
+    width: 40%;
     height: 100%;
+}
+
+.title-info-wrap{ 
+    --font-size: .5rem;
+    height: 7rem;
+    overflow: hidden;
+    position: relative;
+    font-weight: 600;
+    font-size: var(--font-size);
+    text-transform: uppercase;
+    color: var(--main-color);
+
+}
+.desc-wrap{ 
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+    color: var(--main-color);
+}
+
+.form-info {
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    width: 80%;
+    padding: 1rem 2rem;
+    border-radius:1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content-title{
+    transition: transform 1s;
+    transform: translateY(0);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content-desc{
+    transition: transform 1s;
+    transform: translateY(0);
+    font-size: 0.9rem;
+    color: var(--main-color)
+}
+
+
+.btn-wrap {
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+}
+
+.btn-wrap button {
+    font-weight: 600;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.btn-wrap button i {
+    margin-left: .5rem;
 }
