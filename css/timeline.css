@@ -26,7 +26,6 @@
 }
 
 .tl__line {
-
     --bg: #f3f3f3cc;
     --w: 12px;
     /* position: absolute; */
@@ -46,7 +45,7 @@
     /* transform-origin: center center; */
     color: var(--bg);
     font-size: 0.875rem;
-
+    cursor: pointer;
 }
 
 .tl__line:hover, .tl__line.active {
