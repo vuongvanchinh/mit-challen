@@ -80,10 +80,11 @@
                 </div>
                 <div class="slider">
                     <div class="slide-wrap ">
-                        <div class="slide-items gap-1 flex vertical-center">
+                        <div class="slide-items flex vertical-center">
                             <?php
                                 foreach($data as $x => $val) {
-                                    echo    "<div class='slide-item' style='background-image:url(",$val['image'][0],")' data-img-bg='",$val['image'][1],"'>
+                                    echo    "<div class='slide-item' data-img-bg='",$val['image'][1],"'>
+                                                <img src=",$val['image'][0],">
                                                 <div class='title-wrap'>
                                                     <p class='card-text'>",$val['name'],"</p>
                                                 </div>

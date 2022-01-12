@@ -124,7 +124,73 @@ const slider = function () {
   }
 
 };
-  slider();
+
+// $(document).ready(() => {
+//   const b = document.querySelector('.slide-item').classList.add('scale-2')
+
+// })
+  // slider();
 
 
+
+// Chinh
+const slider_ver2 = () => {
+  
+
+  const slides = $('.slide-item')
+  $(slides[0]).addClass('active')
+
+}
+
+
+
+$(document).ready(() => {
+  const slide_container = $('.slide-items')
+
+  const nextSlide = (time=1000, changebg=true) => {
+    const currentSlide = $('.slide-item.active')
+    currentSlide.addClass('slide-item-fade-out')
+    currentSlide.next().addClass('active')
+    if(changebg) {
+      const bg_link = currentSlide.next().data('img-bg')
+      $('#container').css({
+        backgroundImage: `url("${bg_link}")`
+      })
+    }
+    setTimeout(() => {
+      currentSlide.removeClass('active')
+      currentSlide.removeClass('slide-item-fade-out')
+      slide_container.append(currentSlide)
+     
+    }, time)
+  }
+
+  const prevSlide = (time=1000, changebg=true) => {
+    const currentSlide = $('.slide-item.active')
+    // currentSlide.addClass('slide-item-fade-out')
+    const prevSlide = $('.slide-item:last-child')
+
+    prevSlide.addClass('slide-item-fade-in')
+    prevSlide.addClass('active')
+    currentSlide.removeClass('active')
+    slide_container.prepend(prevSlide)
+
+    if(changebg) {
+      const bg_link = prevSlide.data('img-bg')
+      $('#container').css({
+        backgroundImage: `url("${bg_link}")`
+      })
+    }
+    setTimeout(() => {
+      
+      prevSlide.removeClass('slide-item-fade-in')
+      // slide_container.append(currentSlide)
+     
+    }, time)
+  }
+  slider_ver2()
+  // setTimeout(nextSlide(), 2000)
+  $('.slider__btn--right').click(() => nextSlide(1000))
+  $('.slider__btn--left').click(() => prevSlide(1000))
+})
   
