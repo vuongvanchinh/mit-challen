@@ -1,13 +1,13 @@
 :root {
     --main-color: #ffffff;
-    --second-color: #ffffff;
-
+    --second-color: #ccc;
     --main-bg: #ffffff;
     --second-bg: #ffffff;
     --w: 16rem;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700;900&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300&display=swap');
 * {
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -98,4 +98,99 @@ main {
 
 .vertical-center {
     align-items: center;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    768px
+} */
+
+@media only screen and (max-width: 1500px) {
+    .content{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*
+    Info
+    */
+    .info{
+        width: 95%;
+        height:50%;
+    }
+    .form-info{
+        width: 100%;
+        top: 0rem;
+        left: 0rem;
+        padding: .5rem 1rem;
+        height: 50vh;
+        transform: translateY(0);
+        
+    }
+    .title-info-wrap{ 
+        --font-size: 1rem;
+        margin-bottom: calc(1rem);
+        font-size: var(--font-size);
+    }
+    .desc-wrap{
+        height: 65%;
+        overflow: hidden;
+    }
+    .btn-wrap {
+        bottom: 1rem;
+    }
+    .btn-wrap button {
+        padding: .5rem 1rem;
+    }
+
+    /*
+    Slide
+    */
+    .slide-wrap{
+        top: 50%;
+        left: 0rem;
+    }
+    .slide-item {
+        height: calc(var(--w) - 1rem);
+        width: calc(var(--w) - 2rem);
+    }
+
+    .slide-item.active {
+        height: calc(var(--w) + .5rem);
+    }
+
+    @keyframes slide-fadeIn {
+        0% {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            margin-right: 0;
+        }
+        100% {
+            opacity: 1;
+            margin-right: 1rem;
+            width: calc(var(--w) - 2rem);
+            height: calc(var(--w) + .5rem);
+        }
+    }
+    .slider__btns{
+        position: absolute;
+        bottom: 8%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+
+    .slider__btns button:hover i{
+        transition: .3s ease-in-out;
+        transform: scale(1.2);
+    }
+
+    .title-wrap{
+        height: 30%;
+    }
 }

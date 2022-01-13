@@ -135,62 +135,139 @@ const slider = function () {
 
 // Chinh
 const slider_ver2 = () => {
-  
-
   const slides = $('.slide-item')
   $(slides[0]).addClass('active')
-
 }
-
-
 
 $(document).ready(() => {
   const slide_container = $('.slide-items')
+  const slides = $('.slide-item')
+  const tlLines = $('.tl__line')
+  let curSlide = 0;
 
-  const nextSlide = (time=1000, changebg=true) => {
+  const activeDot = (cur) => {
+    // tlLines.eq(pre).removeClass('active');
+    tlLines.removeClass('active')
+    tlLines.eq(cur).addClass('active');
+  }
+
+  const switchInfo = (slide) => {
+    $('.content-title').animate({opacity: 0}, 'fast', function() {
+      $(this).slideUp('slow');
+    });
+    $('.content-desc').animate({opacity: 0}, 'fast', function() {
+      $(this).slideUp('slow');
+    });
+    $(`.content-title:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
+      $(this).slideDown('slow');
+    });
+    $(`.content-desc:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
+      $(this).slideDown('slow');
+    });
+  }
+
+
+  const nextSlide = (time=1000, changebg=true, activeTl=true) => {
     const currentSlide = $('.slide-item.active')
     currentSlide.addClass('slide-item-fade-out')
     currentSlide.next().addClass('active')
+
+    if(activeTl) {
+      curSlide = currentSlide.next().data('slide-id');
+      activeDot(curSlide)
+      switchInfo(curSlide)
+    }
+
     if(changebg) {
       const bg_link = currentSlide.next().data('img-bg')
       $('#container').css({
         backgroundImage: `url("${bg_link}")`
       })
     }
+
     setTimeout(() => {
       currentSlide.removeClass('active')
       currentSlide.removeClass('slide-item-fade-out')
       slide_container.append(currentSlide)
-     
     }, time)
   }
 
-  const prevSlide = (time=1000, changebg=true) => {
+  const prevSlide = (time=1000, changebg=true, activeTl=true) => {
     const currentSlide = $('.slide-item.active')
     // currentSlide.addClass('slide-item-fade-out')
     const prevSlide = $('.slide-item:last-child')
 
     prevSlide.addClass('slide-item-fade-in')
     prevSlide.addClass('active')
-    currentSlide.removeClass('active')
+    currentSlide.removeClass('active')  
     slide_container.prepend(prevSlide)
 
+    if(activeTl) {
+      curSlide = prevSlide.data('slide-id');
+      activeDot(curSlide)
+      switchInfo(curSlide)
+    }
     if(changebg) {
       const bg_link = prevSlide.data('img-bg')
       $('#container').css({
         backgroundImage: `url("${bg_link}")`
       })
     }
+
     setTimeout(() => {
-      
       prevSlide.removeClass('slide-item-fade-in')
       // slide_container.append(currentSlide)
-     
     }, time)
   }
+
+  const cardClickToActive = () => {
+    slides.click(function(){
+      nextSlide(1000)
+    })
+  }
+
+  const dotClickToActive = () => {
+    tlLines.click(function(){
+      let inx = tlLines.index(this) 
+      if(curSlide !== inx) {
+        activeDot(inx)
+        switchInfo(inx)
+      }
+        if(curSlide < inx) {
+          backgroundTravelTime(inx - curSlide, 100, nextSlide, 1000 )
+        } else if(curSlide > inx){
+          backgroundTravelTime(curSlide - inx, 100, prevSlide, 1000 )
+        }
+        curSlide = inx;
+    });
+  }
+  switchInfo(0);
   slider_ver2()
-  // setTimeout(nextSlide(), 2000)
+  dotClickToActive();
+  cardClickToActive();
   $('.slider__btn--right').click(() => nextSlide(1000))
   $('.slider__btn--left').click(() => prevSlide(1000))
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') prevSlide(1000);
+    e.key === 'ArrowRight' && nextSlide(1000);
+  });
+
 })
-  
+
+const backgroundTravelTime = function(times, second, callback, callbackParams = 1000) {
+  let changeBg = false;
+  let i = 0;    
+  function timeLoop() {      
+    setTimeout(function() {   
+      changeBg = i === (times - 1) && true;
+      callback(callbackParams,changeBg, false);
+      i++;                   
+      if (i < times) {        
+        timeLoop();            
+      }                       
+    }, second)
+  }
+  timeLoop(); 
+}
+              
+

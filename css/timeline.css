@@ -3,7 +3,6 @@
     width: 80px;
     flex-shrink: 0;
     height: 100%;
-    border-right: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +19,15 @@
 
 .tl__lines {
     --line-w: 3px;
+    --bg: rgba(255,255,255,0.5);
     height: 100%;
     width: var(--line-w);
-    background: #f3f3f3;
+    background-color: var(--bg);
     position: relative;
 }
 
 .tl__line {
-    --bg: #f3f3f3cc;
+    --bg: rgba(251, 242, 242, 0.8);
     --w: 12px;
     /* position: absolute; */
     background-color: var(--bg);
@@ -38,7 +38,6 @@
     position: absolute;
     left: calc((var(--line-w) - var(--w)) / 2);
     /* transform: translateX(-50%); */
-    transition: all 0.5 ease-in-out;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
     text-align: center;
@@ -51,7 +50,8 @@
 
 .tl__line:hover, .tl__line.active {
     --w: 24px;
-    color: #000;
+    color: #000000;
     transform: translateY(-25%);
-    /* transform: scale(2); */
+    font-weight: 600;
+    /* transform: scale(1.01); */
 }

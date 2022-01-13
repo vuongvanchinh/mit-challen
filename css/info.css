@@ -4,18 +4,27 @@
 }
 
 .title-info-wrap{ 
-    --font-size: .5rem;
-    height: 7rem;
+    --font-size: 2.5rem;
+    margin-bottom: calc(1rem);
     overflow: hidden;
     position: relative;
     font-weight: 600;
     font-size: var(--font-size);
     text-transform: uppercase;
     color: var(--main-color);
-
 }
+
+.content-title{
+    transition: transform 1s;
+    transform: translateY(0);
+    display: none;
+}
+
+.content-title.active{
+    display: block;
+}
+
 .desc-wrap{ 
-    height: 12rem;
     overflow: hidden;
     position: relative;
     color: var(--main-color);
@@ -23,41 +32,54 @@
 
 .form-info {
     position: relative;
-    top: 5rem;
+    top: 50%;
     left: 5rem;
-    width: 80%;
-    padding: 1rem 2rem;
+    width: 90%;
+    transform: translateY(-50%);
+    padding: 1rem 2rem 10rem 2rem;
     border-radius:1rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.content-title{
-    transition: transform 1s;
-    transform: translateY(0);
-    white-space: nowrap;
-    overflow: hidden;
+    
+    /* box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0, 0.5); */
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%)
 }
 
 .content-desc{
     transition: transform 1s;
     transform: translateY(0);
     font-size: 0.9rem;
-    color: var(--main-color)
+    color: var(--main-color);
+    display: none;
+}
+.content-desc{ 
+
 }
 
 
 .btn-wrap {
-    margin-top: 2.5rem;
+    position: absolute;
     border-radius: 1rem;
+    bottom: 2rem;
 }
 
 .btn-wrap button {
     font-weight: 600;
-    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
     border-radius: .5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-wrap:hover button {
+    transition: width 0.25s;
+    -webkit-transition:width .25s;
+    -moz-transition: width 0.25s;
+    width: 13rem;
 }
 
 .btn-wrap button i {
     margin-left: .5rem;
 }
+

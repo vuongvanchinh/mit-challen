@@ -15,12 +15,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Places </title>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -61,7 +61,7 @@
                         <div class="title-info-wrap">
                             <?php
                                 foreach($data as $x => $val) {
-                                    echo "<h1 class='content-title'>",$val['name'],"</h1>";
+                                    echo "<h1 class='content-title '>",$val['name'],"</h1>";
                                 }
                             ?> 
                         </div>
@@ -83,10 +83,10 @@
                         <div class="slide-items flex vertical-center">
                             <?php
                                 foreach($data as $x => $val) {
-                                    echo    "<div class='slide-item' data-img-bg='",$val['image'][1],"'>
+                                    echo    "<div class='slide-item' data-slide-id='",$x ,"' data-img-bg='",$val['image'][1],"'>
                                                 <img src=",$val['image'][0],">
                                                 <div class='title-wrap'>
-                                                    <p class='card-text'>",$val['name'],"</p>
+                                                    <p class='card-text'>" ,$val['name'],"</p>
                                                 </div>
                                             </div>";
                                 }
@@ -94,8 +94,8 @@
                         </div>
                     </div>
                     <div class="slider__btns">
-                        <button class="slider__btn--left"><i class="fas fa-chevron-circle-left"></i></button>
-                        <button class="slider__btn--right"><i class="fas fa-chevron-circle-right"></i></button>
+                        <button class="slider__btn--left"><i class="fad fa-chevron-circle-left"></i></button>
+                        <button class="slider__btn--right"><i class="fad fa-chevron-circle-right"></i></button>
                     </div>
                 </div>
             </div>
