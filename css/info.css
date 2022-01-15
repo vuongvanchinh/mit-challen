@@ -157,3 +157,6 @@ content: '';
     font-weight: 600;
 }
 
+.en {
+  display: none;
+}
