@@ -109,7 +109,31 @@ main {
     768px
 } */
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1024px) {
+    #toggle{
+        margin: 40px 10px 50px;
+    }
+    .header {
+        height: 40px;
+    }
+    .timeline {
+        width: 30px;
+        padding-left:15px;
+    }
+
+    .timeline.active {
+        justify-content: start;
+        padding-left:5px;
+        width: 100px;
+    }
+    .ttl-title { 
+        left:1.1rem;
+    }
+
+    .ttl-title.active { 
+        width: 80px;
+    }
+
     .content{
         flex-grow: 1;
         display: flex;
@@ -121,47 +145,64 @@ main {
     */
     .info{
         width: 95%;
-        height:50%;
+        height:40%;
+        overflow: hidden;
+        padding: 2rem 0 0 0 ;
+    }
+    .content-title{ 
+        max-height: 5rem;
+        overflow: auto;
+    }
+
+    .desc-wrap{
+        height: 60%;
+        overflow: auto;
     }
     .form-info{
         width: 100%;
         top: 0rem;
         left: 0rem;
-        padding: .5rem 1rem;
-        height: 50vh;
+        height: 100%;
+        padding: .5rem 1rem 6rem 1rem;
         transform: translateY(0);
     }
-    
+
     .title-info-wrap{ 
         --font-size: 1rem;
         margin-bottom: calc(1rem);
         font-size: var(--font-size);
     }
-    .desc-wrap{
-        height: 65%;
-        overflow: hidden;
-    }
     .btn-wrap {
         bottom: 1rem;
     }
-    .btn-wrap button {
-        padding: .5rem 1rem;
+    .discover--btn {
+        min-width: 200px;
+        padding: 5px 8px;
+        min-height: 50px;
+    }
+    .discover--btn::before { 
+        min-width: calc(200px + 5px);
+        min-height: calc(50px + 5px);
     }
 
     /*
     Slide
     */
+    .slider {
+        height: 60%;
+        overflow: hidden;
+    }
     .slide-wrap{
         top: 50%;
         left: 0rem;
     }
     .slide-item {
-        height: calc(var(--w) - 1rem);
-        width: calc(var(--w) - 2rem);
+        height: calc(var(--w));
+        width: calc(var(--w) - 1rem);
     }
 
     .slide-item.active {
-        height: calc(var(--w) + .5rem);
+        height: calc(var(--w) + 1.5rem);
     }
 
     @keyframes slide-fadeIn {
@@ -178,9 +219,10 @@ main {
             height: calc(var(--w) + .5rem);
         }
     }
+
     .slider__btns{
         position: absolute;
-        bottom: 8%;
+        bottom: 1rem;
         left:50%;
         transform: translateX(-50%);
     }
@@ -189,8 +231,92 @@ main {
         transition: .3s ease-in-out;
         transform: scale(1.2);
     }
-
+    .slider__btns button {
+        transform: scale(2);
+    }
     .title-wrap{
         height: 30%;
+    }
+}
+
+@media only screen and (max-width: 400px) { 
+    #toggle{
+        margin: 40px 10px 50px;
+    }
+    .info{
+        width: 95%;
+        height:40%;
+        overflow: hidden;
+        padding: 2rem 0 0 0 ;
+    }
+    .content-title{ 
+        max-height: 2rem;
+        overflow: auto;
+    }
+    .timeline {
+        width: 30px;
+        padding-left:15px;
+    }
+
+    .timeline.active {
+        justify-content: start;
+        padding-left:5px;
+        width: 80px;
+    }
+    .ttl-title { 
+        left:1.1rem;
+        padding: .1rem .1rem;
+        top:-1.4rem;
+        line-height: .7rem;
+
+    }
+    .tl__line:hover .ttl-title, .tl__line.active .ttl-title{
+        line-height: .7rem;
+    }
+
+    .ttl-title.active { 
+        width: 52px;
+        height: 2rem;
+        font-size: 0.5rem;
+
+    }
+    .ttl-title::before { 
+        left: -28%;
+    }
+
+    .form-info{
+        width: 100%;
+        top: 0rem;
+        left: 0rem;
+        height: 100%;
+        padding: .5rem 1rem 4.8rem 1rem;
+        transform: translateY(0);
+    }
+    .desc-wrap{  
+        height: 80%;
+        overflow: auto;
+    }
+    
+    .title-info-wrap{ 
+        --font-size: .5rem;
+        margin-bottom: calc(1rem);
+        font-size: var(--font-size);
+    }
+    .discover--btn {
+        min-width: 200px;
+        padding: 5px 8px;
+        min-height: 30px;
+    }
+    .discover--btn::before { 
+        min-width: calc(200px - 10px);
+        min-height: calc(30px + 5px);
+        border-radius: 15px;
+    }
+
+    .btn-wrap {
+        bottom: .5rem;
+    }
+    .btn-wrap button {
+        padding: .5rem 1rem;
     }
 }

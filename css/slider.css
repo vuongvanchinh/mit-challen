@@ -26,6 +26,7 @@
     margin-right: 1rem;
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    font-size: 1.1rem;
     /* display: flex;
     flex-direction: column;
     align-items: flex-end; */
@@ -35,12 +36,14 @@
 @keyframes slide-fadeOut {
     0% {
         opacity: 1;
+        font-size: 1.1rem;
     }
     100% {
         opacity: 0;
         width: 0;
         height: 0;
         margin-right: 0;
+        font-size: 0rem;
     }
     
 }
@@ -51,12 +54,14 @@
         width: 0;
         height: 0;
         margin-right: 0;
+        font-size: 0rem;
     }
     100% {
         opacity: 1;
         margin-right: 1rem;
         width: var(--w);
         height: calc(var(--w) + 6rem);
+        font-size: 1.1rem;
     }
 }
 
@@ -65,6 +70,7 @@
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+   
 }
 
 .slide-item-fade-in {
@@ -107,6 +113,8 @@
     padding: .5rem 2rem ;
     box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
     background-color: rgba(0, 0, 0, 0.5);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
     overflow: hidden;
     display:flex;
     align-items:center;
@@ -122,6 +130,7 @@
     left:45%;
     display: flex;
     gap: 5rem;
+
 }
 .slider__btns button {
     transform: scale(3);
@@ -139,16 +148,4 @@
 .slider__btns button:hover i{
     transition: .3s ease-in-out;
     transform: scale(1.5);
-}
-
-.hidden__animate{
-    animation: hideA .4s ease-in-out;
-}
-
-@keyframes hideA {
-    0%   {opacity: 1; }
-    25%  {opacity: 0.75;}
-    50%  {opacity: 0.5;}
-    75%  {opacity: 0.25;}
-    100% {opacity: 0 ;}
 }

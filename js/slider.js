@@ -140,10 +140,15 @@ const slider_ver2 = () => {
 }
 
 $(document).ready(() => {
+  const toggleTooltip = $('#toggle')
   const slide_container = $('.slide-items')
   const slides = $('.slide-item')
   const tlLines = $('.tl__line')
+  const tlTitle = $('.ttl-title')
+  const discoverBtn = $('.discover--btn');
   let curSlide = 0;
+  let clicked = false;
+  
 
   const activeDot = (cur) => {
     // tlLines.eq(pre).removeClass('active');
@@ -151,21 +156,50 @@ $(document).ready(() => {
     tlLines.eq(cur).addClass('active');
   }
 
+  toggleTooltip.click(() => {
+    toggleTooltip.toggleClass('on');
+    tlTitle.toggleClass('active');
+    $('.timeline').toggleClass('active');
+  })
+  
+  const cursor = (el, cursor) => {
+    for (i = 0; i < el.length; i++) {
+      el[i].css({
+        cursor: `${cursor}`
+      })
+    }
+  }
+
   const switchInfo = (slide) => {
+    document.body.style.cursor ="wait";
+
+    cursor([slides,tlLines,$('#container'), $('.slider__btn--right'), $('.slider__btn--left')],"wait")
+
+    clicked = true;
+    discoverBtn.addClass('scale-0')
     $('.content-title').animate({opacity: 0}, 'fast', function() {
       $(this).slideUp('slow');
     });
+
     $('.content-desc').animate({opacity: 0}, 'fast', function() {
       $(this).slideUp('slow');
     });
+
     $(`.content-title:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
       $(this).slideDown('slow');
     });
     $(`.content-desc:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
       $(this).slideDown('slow');
     });
+    setTimeout(() => {
+      discoverBtn.removeClass('scale-0')
+    },1500)
+    setTimeout(() => { 
+      clicked = false;
+      cursor([slides,tlLines, $('.slider__btn--right'), $('.slider__btn--left')],"pointer");
+      cursor([$('#container')],"default");
+    },2000)
   }
-
 
   const nextSlide = (time=1000, changebg=true, activeTl=true) => {
     const currentSlide = $('.slide-item.active')
@@ -193,6 +227,7 @@ $(document).ready(() => {
   }
 
   const prevSlide = (time=1000, changebg=true, activeTl=true) => {
+
     const currentSlide = $('.slide-item.active')
     // currentSlide.addClass('slide-item-fade-out')
     const prevSlide = $('.slide-item:last-child')
@@ -222,12 +257,18 @@ $(document).ready(() => {
 
   const cardClickToActive = () => {
     slides.click(function(){
+      if(clicked) {
+        return false
+      }
       nextSlide(1000)
     })
   }
 
   const dotClickToActive = () => {
     tlLines.click(function(){
+      if(clicked) {
+        return false
+      }
       let inx = tlLines.index(this) 
       if(curSlide !== inx) {
         activeDot(inx)
@@ -241,26 +282,38 @@ $(document).ready(() => {
         curSlide = inx;
     });
   }
+
   switchInfo(0);
   slider_ver2()
+
   dotClickToActive();
   cardClickToActive();
-  $('.slider__btn--right').click(() => nextSlide(1000))
-  $('.slider__btn--left').click(() => prevSlide(1000))
+  $('.slider__btn--right').click(() => {
+    if(clicked) {
+      return false
+    }
+    nextSlide(1000)
+  })
+  $('.slider__btn--left').click(() => {
+    if(clicked) {
+      return false
+    }
+    prevSlide(1000)
+  })
   document.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowLeft') prevSlide(1000);
-    e.key === 'ArrowRight' && nextSlide(1000);
+    if (e.key === 'ArrowLeft' && !clicked) prevSlide(1000);
+    (e.key === 'ArrowRight'&&!clicked) && nextSlide(1000);
   });
 
 })
 
-const backgroundTravelTime = function(times, second, callback, callbackParams = 1000) {
+const backgroundTravelTime = function(times, second, callback, callbackParam = 1000) {
   let changeBg = false;
   let i = 0;    
   function timeLoop() {      
     setTimeout(function() {   
       changeBg = i === (times - 1) && true;
-      callback(callbackParams,changeBg, false);
+      callback(callbackParam,changeBg, false);
       i++;                   
       if (i < times) {        
         timeLoop();            

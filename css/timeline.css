@@ -4,11 +4,16 @@
     flex-shrink: 0;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding-left:40px;
     user-select: none;
+    transition:all .3s ease-in-out;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%)
+}
+.timeline.active {
+    justify-content: start;
+    padding-left:15px;
 }
 
 .timeline__inner {
@@ -33,25 +38,75 @@
     background-color: var(--bg);
     width: var(--w);
     height: var(--w);
-    border-radius: 50%;
 
-    position: absolute;
     left: calc((var(--line-w) - var(--w)) / 2);
-    /* transform: translateX(-50%); */
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    /* transform: translateX(-50%); */    
+    border-radius: 50%;
+    position: absolute;
     text-align: center;
+    transition: all 0.5s ease-in-out;
     line-height: var(--w);
-    /* transform-origin: center center; */
+    transform-origin: center center;
     color: var(--bg);
-    font-size: 0.875rem;
+    font-size: 0.2rem;
     cursor: pointer;
 }
 
+
 .tl__line:hover, .tl__line.active {
-    --w: 24px;
     color: #000000;
-    transform: translateY(-25%);
+    /* transform: translateY(-25%); */
     font-weight: 600;
-    /* transform: scale(1.01); */
+    font-size: 0.6rem;
+    transform: scale(1.4);
+}
+
+.tl__line:hover .ttl-title,.tl__line.active .ttl-title{
+    left:.7rem;
+    transform: scale(0.8);
+}
+
+.tl__line:hover .ttl-title{
+    display: block;
+}
+.ttl-title {
+    font-size: 0rem;
+    left:1.5rem;
+    position: relative;
+    width: 0rem;
+    height:2.5rem;
+    display: block;
+    top: -1.6rem;
+    background: var(--main-color);
+
+    color: black;
+    border-radius: 5px;
+    text-align: start;
+    padding: .25rem .25rem;
+    z-index:999999999;
+    line-height: 1rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.ttl-title.active {
+    width: 6rem;
+    opacity: 1;
+    font-size: 0.6rem;
+}
+.ttl-title::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: -15%;
+    border-width: 10px;
+    border-style: solid;
+    z-index:-1;
+    border-color:  transparent var(--main-color) transparent transparent;
+}
+.tl__line:hover .ttl-title, .tl__line.active .ttl-title{
+    /* top: calc(var(--w) - var(--w)*3.3);
+    left: calc(var(--w) + var(--w)*3/2);
+    transform: translateY(0); */
+    line-height: 1rem;
 }

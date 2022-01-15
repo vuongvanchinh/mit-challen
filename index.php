@@ -29,26 +29,26 @@
         echo    "<div id='container' style='background-image: url(",$data[0]['image'][1],")'>";
     ?> 
         <header class="header">
-            header
+            <!-- <div id="title-toggle">
+                <a href="#menu" id="toggle"><span></span></a>
+            </div> -->
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="language"></div>
         </header>
         <main>
             <div class="timeline">
                 <div class="timeline__inner">
                     <div class="tl__lines">
-                        <div class="tl__line">1</div>
-                        <div class="tl__line">2</div>
-                        <div class="tl__line">3</div>
-                        <div class="tl__line">4</div>
-                        <div class="tl__line">5</div>
-                        <div class="tl__line">6</div>
-                        <div class="tl__line">7</div>
-                        <div class="tl__line">8</div>
-                        <div class="tl__line">9</div>
-                        <div class="tl__line">10</div>
-                        <div class="tl__line">11</div>
-                        <div class="tl__line">12</div>
-                        <div class="tl__line">13</div>
-                        <div class="tl__line">14</div>
+                        <?php
+                            foreach($data as $x => $val) {
+                                echo "<div class='tl__line' title='",$val['name'],"'>",
+                                "<span>",$x + 1,"</span>",
+                                "<div class='ttl-title'><p>",$val['name'],"</p></div>"
+                                ,"</div>";
+                            }
+                        ?> 
                     </div>
                 </div>
                 <div class="timeline__count">
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="content">
-                <div class="info">
+                <div class="info ">
                     <div class="form-info">
                         <div class="title-info-wrap">
                             <?php
@@ -73,12 +73,12 @@
                             ?>
                         </div>
                         <div class="btn-wrap">
-                            <button>Khám phá <i class="fal fa-arrow-right"></i></button>
+                            <button class="discover--btn scale-0">Khám phá </button>
                         </div>
                     </div>
 
                 </div>
-                <div class="slider">
+                <div class="slider ">
                     <div class="slide-wrap ">
                         <div class="slide-items flex vertical-center">
                             <?php

@@ -4,7 +4,7 @@
 }
 
 .title-info-wrap{ 
-    --font-size: 2.5rem;
+    --font-size: 2rem;
     margin-bottom: calc(1rem);
     overflow: hidden;
     position: relative;
@@ -14,7 +14,7 @@
     color: var(--main-color);
 }
 
-.content-title{
+.content-title,.content-title-v2{
     transition: transform 1s;
     transform: translateY(0);
     display: none;
@@ -35,17 +35,18 @@
     top: 50%;
     left: 5rem;
     width: 90%;
+    max-height: 90vh;
     transform: translateY(-50%);
     padding: 1rem 2rem 10rem 2rem;
     border-radius:1rem;
     
-    /* box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
-    background-color: rgba(0, 0, 0, 0.5); */
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%)
+    box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%) */
 }
 
-.content-desc{
+.content-desc, .content-desc-v2{
     transition: transform 1s;
     transform: translateY(0);
     font-size: 0.9rem;
@@ -59,27 +60,100 @@
 
 .btn-wrap {
     position: absolute;
-    border-radius: 1rem;
     bottom: 2rem;
 }
 
 .btn-wrap button {
     font-weight: 600;
     font-size: 1.2rem;
-    padding: 1rem 2rem;
-    border-radius: .5rem;
     cursor: pointer;
-    width: 100%;
+    transition: all .5s ease-in-out;
 }
 
-.btn-wrap:hover button {
-    transition: width 0.25s;
-    -webkit-transition:width .25s;
-    -moz-transition: width 0.25s;
-    width: 13rem;
+.scale-0 {
+    transform: scale(0);
+}
+
+
+
+.discover--btn {
+  min-width: 180px;
+  min-height: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+.discover--btn::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(180px + 12px);
+  min-height: calc(50px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+
+.discover--btn:hover::before, .discover--btn:focus::before {
+  opacity: 1;
+}
+
+.discover--btn::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.discover--btn:hover::after, .discover--btn:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+.btn-wrap:hover button i,.btn-wrap:hover button {
+    transition: all .5s ease-in-out;
 }
 
 .btn-wrap button i {
     margin-left: .5rem;
+    color:#00FFCB;
+    font-weight: 600;
 }
 
