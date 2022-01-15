@@ -1,15 +1,17 @@
 .timeline {
+    padding-top: 2rem;
     background-color: transparent;
     width: 80px;
     flex-shrink: 0;
     height: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     padding-left:40px;
     user-select: none;
     transition:all .3s ease-in-out;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%)
+    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+    z-index: 100000000;
 }
 .timeline.active {
     justify-content: start;
@@ -34,79 +36,60 @@
 .tl__line {
     --bg: rgba(251, 242, 242, 0.8);
     --w: 12px;
-    /* position: absolute; */
+    --color: var(--bg);
     background-color: var(--bg);
     width: var(--w);
     height: var(--w);
-
+    color: var(--color);
     left: calc((var(--line-w) - var(--w)) / 2);
-    /* transform: translateX(-50%); */    
     border-radius: 50%;
     position: absolute;
-    text-align: center;
     transition: all 0.5s ease-in-out;
     line-height: var(--w);
     transform-origin: center center;
     color: var(--bg);
-    font-size: 0.2rem;
     cursor: pointer;
 }
 
-
-.tl__line:hover, .tl__line.active {
-    color: #000000;
-    /* transform: translateY(-25%); */
-    font-weight: 600;
-    font-size: 0.6rem;
-    transform: scale(1.4);
+.tl__line.active, .tl__line:hover {
+    transform: scale(2);
+    --color: #444;
 }
 
-.tl__line:hover .ttl-title,.tl__line.active .ttl-title{
-    left:.7rem;
-    transform: scale(0.8);
+.tl__line .tl__line__index {
+    width: var(--w);
+    height: var(--w);
+    line-height: var(--w);
+    overflow: hidden;
+    color: var(--color);
+    font-size: .5rem;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    padding-top: 1px;
+    /* border: 1px solid red; */
 }
 
-.tl__line:hover .ttl-title{
-    display: block;
-}
+
 .ttl-title {
-    font-size: 0rem;
-    left:1.5rem;
-    position: relative;
-    width: 0rem;
-    height:2.5rem;
-    display: block;
-    top: -1.6rem;
-    background: var(--main-color);
-
-    color: black;
-    border-radius: 5px;
-    text-align: start;
-    padding: .25rem .25rem;
-    z-index:999999999;
-    line-height: 1rem;
-    opacity: 0;
-    transition: all .5s ease-in-out;
-}
-
-.ttl-title.active {
-    width: 6rem;
-    opacity: 1;
-    font-size: 0.6rem;
-}
-.ttl-title::before {
-    content: "";
+    /* display: none; */
+    transform: scale(0);
+    transform-origin: left top;
     position: absolute;
-    top: 25%;
-    left: -15%;
-    border-width: 10px;
-    border-style: solid;
-    z-index:-1;
-    border-color:  transparent var(--main-color) transparent transparent;
+    top: .5rem;
+    left: calc(100% + 1px);
+    background-color:  var(--bg);
+    color: #444;
+    transition: transform 0.5s ease-in-out;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 1rem;
+    border-radius: 16px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
 }
-.tl__line:hover .ttl-title, .tl__line.active .ttl-title{
-    /* top: calc(var(--w) - var(--w)*3.3);
-    left: calc(var(--w) + var(--w)*3/2);
-    transform: translateY(0); */
-    line-height: 1rem;
+
+.tl__line:hover .ttl-title {
+    transform: scale(0.5);
 }

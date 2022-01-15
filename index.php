@@ -43,8 +43,8 @@
                     <div class="tl__lines">
                         <?php
                             foreach($data as $x => $val) {
-                                echo "<div class='tl__line' title='",$val['name'],"'>",
-                                "<span>",$x + 1,"</span>",
+                                echo "<div class='tl__line'>",
+                                "<div class='tl__line__index'>",$x + 1,"</div>",
                                 "<div class='ttl-title'><p>",$val['name'],"</p></div>"
                                 ,"</div>";
                             }
