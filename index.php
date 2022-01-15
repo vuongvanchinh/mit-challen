@@ -68,7 +68,7 @@
                             foreach($data as $x => $val) {
                                 echo "<div class='tl__line'>",
                                 "<div class='tl__line__index'>",$x + 1,"</div>",
-                                "<div class='ttl-title'><p>",$val['name'],"</p></div>"
+                                "<div class='ttl-title'><p><span class='vi'>",$val['name'],"</span><span class='en'>",$val['title'],"</span></p></div>"
                                 ,"</div>";
                             }
                         ?> 
