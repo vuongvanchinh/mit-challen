@@ -140,6 +140,38 @@ const slider_ver2 = () => {
 }
 
 $(document).ready(() => {
+  /* lang*/
+  $(document).click( function(e) {
+      $('.translate_wrapper, .more_lang').removeClass('active');     
+  });
+
+  $('.translate_wrapper .current_lang').click(function(e){    
+    e.stopPropagation();
+    $(this).parent().toggleClass('active');
+    
+    setTimeout(function(){
+      $('.more_lang').toggleClass('active');
+    }, 5);
+  });
+
+  $('.more_lang .lang').click(function(){
+    $(this).addClass('selected').siblings().removeClass('selected');
+    $('.more_lang').removeClass('active');  
+    
+    var img = $(this).find('img').attr('src');    
+    var lang = $(this).attr('data-value');
+    
+    $('.current_lang .lang-txt').text(lang);
+    $('.current_lang img').attr('src', img);
+    if(lang == 'EN') {
+      $('.vi').css({display: 'none'});
+      $('.en').css({display: 'block'});
+    } else {
+      $('.vi').css({display: 'block'});
+      $('.en').css({display: 'none'});
+    }
+  });
+/* lang*/
   const toggleTooltip = $('#toggle')
   const slide_container = $('.slide-items')
   const slides = $('.slide-item')
