@@ -99,7 +99,7 @@
                             <?php
                                 foreach($data as $x => $val) {
                                     echo "<a href='",$val['link_detail'],"' target='_blank' class='btn-link'>
-                                            <button class='discover--btn scale-0'><span class='vi'>Khám phá</span><span class='en'>Discover</span></button>
+                                            <button class='discover--btn scale-0'>Khám phá</button>
                                         </a>";
                                 }
                             ?> 

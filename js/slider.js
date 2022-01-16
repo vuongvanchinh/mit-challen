@@ -140,7 +140,18 @@ const slider_ver2 = () => {
 }
 
 $(document).ready(() => {
+  const discoverBtn = $('.discover--btn');
+  const toggleTooltip = $('#toggle')
+  const slide_container = $('.slide-items')
+  const slides = $('.slide-item')
+  const tlLines = $('.tl__line')
+  const tlTitle = $('.ttl-title')
+  const btnLink = $('.btn-link')
+  let curSlide = 0;
+  let clicked = false;
+
   /* lang*/
+  
   $(document).click( function(e) {
       $('.translate_wrapper, .more_lang').removeClass('active');     
   });
@@ -166,22 +177,15 @@ $(document).ready(() => {
     if(lang == 'EN') {
       $('.vi').css({display: 'none'});
       $('.en').css({display: 'block'});
+      discoverBtn.text('Discover')
     } else {
       $('.vi').css({display: 'block'});
       $('.en').css({display: 'none'});
+      discoverBtn.text('Khám phá')
     }
   });
 /* lang*/
-  const toggleTooltip = $('#toggle')
-  const slide_container = $('.slide-items')
-  const slides = $('.slide-item')
-  const tlLines = $('.tl__line')
-  const tlTitle = $('.ttl-title')
-  const discoverBtn = $('.discover--btn');
-  const btnLink = $('.btn-link')
-  let curSlide = 0;
-  let clicked = false;
-  
+
 
   const activeDot = (cur) => {
     // tlLines.eq(pre).removeClass('active');
