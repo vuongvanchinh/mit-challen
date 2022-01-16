@@ -178,6 +178,7 @@ $(document).ready(() => {
   const tlLines = $('.tl__line')
   const tlTitle = $('.ttl-title')
   const discoverBtn = $('.discover--btn');
+  const btnLink = $('.btn-link')
   let curSlide = 0;
   let clicked = false;
   
@@ -202,11 +203,9 @@ $(document).ready(() => {
     }
   }
 
-  const switchInfo = (slide) => {
+  const switchInfo = (slide, travel = 0) => {
     document.body.style.cursor ="wait";
-
     cursor([slides,tlLines,$('#container'), $('.slider__btn--right'), $('.slider__btn--left')],"wait")
-
     clicked = true;
     discoverBtn.addClass('scale-0')
     $('.content-title').animate({opacity: 0}, 'fast', function() {
@@ -217,20 +216,29 @@ $(document).ready(() => {
       $(this).slideUp('slow');
     });
 
-    $(`.content-title:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
-      $(this).slideDown('slow');
-    });
-    $(`.content-desc:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
-      $(this).slideDown('slow');
-    });
     setTimeout(() => {
-      discoverBtn.removeClass('scale-0')
-    },1500)
-    setTimeout(() => { 
-      clicked = false;
-      cursor([slides,tlLines, $('.slider__btn--right'), $('.slider__btn--left')],"pointer");
-      cursor([$('#container')],"default");
-    },2000)
+      btnLink.css({display: 'none'})
+      $(`.btn-link:nth-child(${slide + 1})`).css({display: 'block'});
+    },500)
+
+    setTimeout(() => {
+      $(`.content-title:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
+        $(this).slideDown('slow');
+      });
+      $(`.content-desc:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
+        $(this).slideDown('slow');
+      });
+      setTimeout(() => {
+        discoverBtn.removeClass('scale-0')
+      },1500)
+
+      setTimeout(() => { 
+        clicked = false;
+        cursor([slides,tlLines, $('.slider__btn--right'), $('.slider__btn--left')],"pointer");
+        cursor([$('#container')],"default");
+      },2000)
+
+     },travel)
   }
 
   const nextSlide = (time=1000, changebg=true, activeTl=true) => {
@@ -302,20 +310,21 @@ $(document).ready(() => {
         return false
       }
       let inx = tlLines.index(this) 
+      let travel = Math.abs(inx - curSlide);
       if(curSlide !== inx) {
         activeDot(inx)
-        switchInfo(inx)
+        switchInfo(inx, travel*100)
       }
         if(curSlide < inx) {
-          backgroundTravelTime(inx - curSlide, 100, nextSlide, 1000 )
+          backgroundTravelTime(travel, 100, nextSlide, 1000 )
         } else if(curSlide > inx){
-          backgroundTravelTime(curSlide - inx, 100, prevSlide, 1000 )
+          backgroundTravelTime(travel, 100, prevSlide, 1000 )
         }
         curSlide = inx;
     });
   }
 
-  switchInfo(0);
+  switchInfo(0,0);
   slider_ver2()
 
   dotClickToActive();

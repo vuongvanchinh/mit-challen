@@ -160,3 +160,7 @@ content: '';
 .en {
   display: none;
 }
+
+.btn-link{
+  display: none;
+}

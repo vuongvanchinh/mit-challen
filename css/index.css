@@ -127,11 +127,11 @@ main {
         width: 100px;
     }
     .ttl-title { 
-        left:1.1rem;
+
     }
 
     .ttl-title.active { 
-        width: 80px;
+        
     }
 
     .content{
@@ -264,11 +264,10 @@ main {
         width: 80px;
     }
     .ttl-title { 
-        left:1.1rem;
-        padding: .1rem .1rem;
-        top:-1.4rem;
+        padding: .5rem .5rem;
+        top: 0.3rem;
         line-height: .7rem;
-
+        font-size: .9rem
     }
     .tl__line:hover .ttl-title, .tl__line.active .ttl-title{
         line-height: .7rem;

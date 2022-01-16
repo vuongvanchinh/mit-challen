@@ -1,114 +1,128 @@
 [
     {
         "id": "1", 
-        "name": "Nhã nhạc cung đình Huế",
-        "title": "Lorem ipsum dolor sit amet",
-        "description":"Nhã nhạc là âm nhạc cung đình thời phong kiến, được trình diễn trong các dịp triều hội, tế lễ hoặc các sự kiện trọng đại (lễ đăng quang của nhà vua, tiếp đón sứ thần… Được phát triển từ thế kỷ XIII ở Việt Nam, đến thời nhà Nguyễn, nhã nhạc cung đình Huế phát triển rực rỡ và đạt đến trình độ hoàn chỉnh nhất.",
-        "desc":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
-        "image": ["https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/thoibaotaichinhvietnamvn/012017/31/14/10-di-san-van-hoa-phi-vat-the-the-gioi-tai-viet-nam-08-.7007.jpg", "https://wallpaperaccess.com/full/156374.jpg"]
+        "name_vi": "Nhã nhạc cung đình Huế",
+        "name_en": "Lorem ipsum dolor sit amet",
+        "desc_vi":"Nhã nhạc là âm nhạc cung đình thời phong kiến, được trình diễn trong các dịp triều hội, tế lễ hoặc các sự kiện trọng đại (lễ đăng quang của nhà vua, tiếp đón sứ thần… Được phát triển từ thế kỷ XIII ở Việt Nam, đến thời nhà Nguyễn, nhã nhạc cung đình Huế phát triển rực rỡ và đạt đến trình độ hoàn chỉnh nhất.",
+        "desc_en":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
+        "image": ["https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/thoibaotaichinhvietnamvn/012017/31/14/10-di-san-van-hoa-phi-vat-the-the-gioi-tai-viet-nam-08-.7007.jpg", "https://wallpaperaccess.com/full/156374.jpg"],
+        "link_detail" : "https://solve.mit.edu/solution/3-target-outcomes?challenge_id=126&solution_id=57151"
     },
     {
         "id": "2", 
-        "name": "Cồng chiêng Tây Nguyên",
-        "title": "tricies nec",
-        "description":" Không gian văn hóa Cồng Chiêng Tây Nguyên trải rộng trên địa bàn năm tỉnh: Kon Tum, Gia Lai, Đắk Lắk, Đắk Nông và Lâm Đồng. Không gian văn hóa cồng chiêng Tây Nguyên bao gồm các bộ phận cấu thành như: cồng chiêng, các bản nhạc tấu bằng cồng chiêng, những người chơi cồng chiêng, các lễ hội có sử dụng cồng chiêng, những địa điểm tổ chức các lễ hội đó…",
-        "desc":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
-        "image": ["https://vtv1.mediacdn.vn/thumb_w/650/2017/hat-xoan-1512709356925.jpg", "https://media-cdn.laodong.vn/storage/newsportal/Uploaded/phamthuhien/2016_02_03/Hoi%20giong%20(Custom)_NKEA.jpg?w=720&crop=auto&scale=both"]
+        "name_vi": "Cồng chiêng Tây Nguyên",
+        "name_en": "tricies nec",
+        "desc_vi":" Không gian văn hóa Cồng Chiêng Tây Nguyên trải rộng trên địa bàn năm tỉnh: Kon Tum, Gia Lai, Đắk Lắk, Đắk Nông và Lâm Đồng. Không gian văn hóa cồng chiêng Tây Nguyên bao gồm các bộ phận cấu thành như: cồng chiêng, các bản nhạc tấu bằng cồng chiêng, những người chơi cồng chiêng, các lễ hội có sử dụng cồng chiêng, những địa điểm tổ chức các lễ hội đó…",
+        "desc_en":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
+        "image": ["https://vtv1.mediacdn.vn/thumb_w/650/2017/hat-xoan-1512709356925.jpg", "https://media-cdn.laodong.vn/storage/newsportal/Uploaded/phamthuhien/2016_02_03/Hoi%20giong%20(Custom)_NKEA.jpg?w=720&crop=auto&scale=both"],
+        "link_detail" : "https://trealet.com/360view?tr=99450274157953025"
     },
     {
         "id": "3", 
-        "name": "Dân ca quan họ Bắc Ninh",
-        "title": "t nec, vulputate ege",
-        "description":"Quan họ là những làn điệu dân ca của vùng Đồng bằng Bắc Bộ, tập trung chủ yếu ở vùng Kinh Bắc (Bắc Ninh và Bắc Giang). Đây là hình thức hát đối đáp giữa nam và nữ để biểu lộ tâm tình, ca tụng tình yêu thông qua những câu ca mộc mạc, đằm thắm. Hầu hết các bài Quan họ đều theo thể lục bát hay lục bát biến thể.",
-        "desc":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
-        "image": ["https://cdn.vietnamtours247.com/2020/02/van-hoa-phi-vat-the-cua-viet-nam.png", "https://vnanet.vn/Data/Articles/2019/11/23/4207396/vna_potal_ky_niem_14_nam_ngay_di_san_van_hoa_viet_nam_2311_093823868_stand.jpg"]
+        "name_vi": "Dân ca quan họ Bắc Ninh",
+        "name_en": "t nec, vulputate ege",
+        "desc_vi":"Quan họ là những làn điệu dân ca của vùng Đồng bằng Bắc Bộ, tập trung chủ yếu ở vùng Kinh Bắc (Bắc Ninh và Bắc Giang). Đây là hình thức hát đối đáp giữa nam và nữ để biểu lộ tâm tình, ca tụng tình yêu thông qua những câu ca mộc mạc, đằm thắm. Hầu hết các bài Quan họ đều theo thể lục bát hay lục bát biến thể.",
+        "desc_en":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
+        "image": ["https://cdn.vietnamtours247.com/2020/02/van-hoa-phi-vat-the-cua-viet-nam.png", "https://vnanet.vn/Data/Articles/2019/11/23/4207396/vna_potal_ky_niem_14_nam_ngay_di_san_van_hoa_viet_nam_2311_093823868_stand.jpg"],
+        "link_detail" : "https://docs.google.com/document/d/116gvaV-wnCaqbI9acRQwtbecrq2m8yjIrk5c-wyCd8Q/edit?fbclid=IwAR1uN1WHbECintFVPjerAqHR_GevgPVOzn_aOs3-79hXX2NWTROS9R6HNFg"
     },
     {
         "id": "4", 
-        "name": "Ca trù",
-        "title": "ius laoreet",
-        "description":" Ca trù (hay còn gọi là hát ả đào) có vị trí đặc biệt trong kho tàng âm nhạc truyền thống của Việt Nam, gắn liền với lễ hội, phong tục, tín ngưỡng, văn chương, tư tưởng và triết lý sống của người Việt. Loại hình nghệ thuật này rất phổ biến trong đời sống sinh hoạt văn hóa ở Việt Nam từ đầu thế kỷ XX trở về trước.",
-        "desc":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
-        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROVS2iSQr2b9CfLvaIOuS7ixdT_j3FMotzdw&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTgZqoYMumwj7xHoA4QKMIRAMG1V7ysr-2g&usqp=CAU"]
+        "name_vi": "Ca trù",
+        "name_en": "ius laoreet",
+        "desc_vi":" Ca trù (hay còn gọi là hát ả đào) có vị trí đặc biệt trong kho tàng âm nhạc truyền thống của Việt Nam, gắn liền với lễ hội, phong tục, tín ngưỡng, văn chương, tư tưởng và triết lý sống của người Việt. Loại hình nghệ thuật này rất phổ biến trong đời sống sinh hoạt văn hóa ở Việt Nam từ đầu thế kỷ XX trở về trước.",
+        "desc_en":"lputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, t",
+        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROVS2iSQr2b9CfLvaIOuS7ixdT_j3FMotzdw&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTgZqoYMumwj7xHoA4QKMIRAMG1V7ysr-2g&usqp=CAU"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "5", 
-        "name": "Hội Gióng",
-        "title": "tincidunt.",
-        "description":"Hội Gióng ở đền Phù Đổng và đền Sóc (Hà Nội) gắn với truyền thuyết về một cậu bé được mẹ sinh ra một cách kỳ lạ ở làng Phù Đổng.",
-        "desc":"quat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis v",
-        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT005KjFpNKDtwOeqR94ypazq4uD-Wd7S0iCw&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnS0MSSXDKYZJu_yBFHREHwj25-naQJJFHA&usqp=CAU"]
+        "name_vi": "Hội Gióng",
+        "name_en": "tincidunt.",
+        "desc_vi":"Hội Gióng ở đền Phù Đổng và đền Sóc (Hà Nội) gắn với truyền thuyết về một cậu bé được mẹ sinh ra một cách kỳ lạ ở làng Phù Đổng.",
+        "desc_en":"quat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis v",
+        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT005KjFpNKDtwOeqR94ypazq4uD-Wd7S0iCw&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKnS0MSSXDKYZJu_yBFHREHwj25-naQJJFHA&usqp=CAU"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "6", 
-        "name": "Hát Xoan",
-        "title": "rabitur ",
-        "description":"Nghệ thuật Hát Xoan khi được trình diễn đầy đủ sẽ diễn ra theo các chặng sau: Hát Thờ (tưởng nhớ các Vua Hùng, các vị thần, những người có công với dân, với nước và tổ tiên của các dòng họ), Hát Nghi lễ (ca ngợi thiên nhiên, con người, đời sống sản xuất, sinh hoạt của cộng đồng), Hát Hội (bày tỏ khát vọng trong cuộc sống, tình yêu nam nữ với những làn điệu đậm chất trữ tình, vui nhộn, được thể hiện qua hình thức hát đối đáp giữa trai, gái làng sở tại và các đào, kép của phường Xoan…).",
-        "desc":"varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhon",
-        "image": ["http://hanoimoi.com.vn/Uploads/tuandiep/2016/2/14/ttxvn_den_mau_au_co_1402.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaUINac-Vb0-3HqM0a98JXUnV-dP-27uFHLQ&usqp=CAU"]
+        "name_vi": "Hát Xoan",
+        "name_en": "rabitur ",
+        "desc_vi":"Nghệ thuật Hát Xoan khi được trình diễn đầy đủ sẽ diễn ra theo các chặng sau: Hát Thờ (tưởng nhớ các Vua Hùng, các vị thần, những người có công với dân, với nước và tổ tiên của các dòng họ), Hát Nghi lễ (ca ngợi thiên nhiên, con người, đời sống sản xuất, sinh hoạt của cộng đồng), Hát Hội (bày tỏ khát vọng trong cuộc sống, tình yêu nam nữ với những làn điệu đậm chất trữ tình, vui nhộn, được thể hiện qua hình thức hát đối đáp giữa trai, gái làng sở tại và các đào, kép của phường Xoan…).",
+        "desc_en":"varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhon",
+        "image": ["http://hanoimoi.com.vn/Uploads/tuandiep/2016/2/14/ttxvn_den_mau_au_co_1402.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaUINac-Vb0-3HqM0a98JXUnV-dP-27uFHLQ&usqp=CAU"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "7", 
-        "name": "Thờ cúng Hùng Vương",
-        "title": "io et ant",
-        "description":"Theo truyền thuyết, Hùng Vương là con của cha Lạc Long Quân (giống Rồng) và mẹ Âu Cơ (giống Tiên), đã có công dựng nên nhà nước Văn Lang cổ đại. Đối với cộng đồng dân cư xung quanh khu vực Đền Hùng (Phú Thọ), Hùng Vương còn là thần tổ gắn với nghề nông, dạy dân cày ruộng, cấy lúa, ban linh khí cho đất đai, nhà cửa, cây trồng, vật nuôi sinh sôi nảy nở, mùa màng bội thu.",
-        "desc":", sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut lib",
-        "image": ["https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/thoibaotaichinhvietnamvn/012017/31/14/10-di-san-van-hoa-phi-vat-the-the-gioi-tai-viet-nam-17-.0384.jpg", "https://vnn-imgs-f.vgcloud.vn/2019/12/10/08/2.jpg"]
+        "name_vi": "Thờ cúng Hùng Vương",
+        "name_en": "io et ant",
+        "desc_vi":"Theo truyền thuyết, Hùng Vương là con của cha Lạc Long Quân (giống Rồng) và mẹ Âu Cơ (giống Tiên), đã có công dựng nên nhà nước Văn Lang cổ đại. Đối với cộng đồng dân cư xung quanh khu vực Đền Hùng (Phú Thọ), Hùng Vương còn là thần tổ gắn với nghề nông, dạy dân cày ruộng, cấy lúa, ban linh khí cho đất đai, nhà cửa, cây trồng, vật nuôi sinh sôi nảy nở, mùa màng bội thu.",
+        "desc_en":", sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut lib",
+        "image": ["https://cdn.thoibaotaichinhvietnam.vn/stores/news_dataimages/thoibaotaichinhvietnamvn/012017/31/14/10-di-san-van-hoa-phi-vat-the-the-gioi-tai-viet-nam-17-.0384.jpg", "https://vnn-imgs-f.vgcloud.vn/2019/12/10/08/2.jpg"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "8", 
-        "name": "Đơn ca tài tử Nam Bộ",
-        "title": "ullamcorper",
-        "description":"Đờn ca tài tử là loại hình nghệ thuật dân gian đặc trưng của vùng Nam Bộ, hình thành và phát triển từ cuối thế kỷ XIX trên cơ sở của nhạc lễ, nhã nhạc cung đình Huế và văn học dân gian. Nghệ thuật Đờn ca tài tử Nam Bộ không ngừng được sáng tạo nhờ tính ngẫu hứng và sự biến hóa theo cảm xúc của người thực hành trên cơ sở của 20 bài gốc (bài Tổ) và 72 bản nhạc cổ.",
-        "desc":"nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus vari",
-        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVahmw9QtT2HdnMqe9JZcUmZFZB4rrW0Y2Ew&usqp=CAU", "http://baoquangngai.vn/dataimages/201512/original/images1419541_keo_co_3.jpg"]
+        "name_vi": "Đơn ca tài tử Nam Bộ",
+        "name_en": "ullamcorper",
+        "desc_vi":"Đờn ca tài tử là loại hình nghệ thuật dân gian đặc trưng của vùng Nam Bộ, hình thành và phát triển từ cuối thế kỷ XIX trên cơ sở của nhạc lễ, nhã nhạc cung đình Huế và văn học dân gian. Nghệ thuật Đờn ca tài tử Nam Bộ không ngừng được sáng tạo nhờ tính ngẫu hứng và sự biến hóa theo cảm xúc của người thực hành trên cơ sở của 20 bài gốc (bài Tổ) và 72 bản nhạc cổ.",
+        "desc_en":"nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus vari",
+        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVahmw9QtT2HdnMqe9JZcUmZFZB4rrW0Y2Ew&usqp=CAU", "http://baoquangngai.vn/dataimages/201512/original/images1419541_keo_co_3.jpg"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "9", 
-        "name": "Dân ca Ví, Giặm Nghệ Tĩnh",
-        "title": "ultricies nis",
-        "description":" Dân ca Ví, Giặm Nghệ Tĩnh là hai lối hát dân ca không có nhạc đệm, do cộng đồng hai tỉnh Nghệ An và Hà Tĩnh sáng tạo, lưu truyền trong quá trình lao động sản xuất và gắn bó chặt chẽ với đời sống sinh hoạt của cộng đồng dân cư xứ Nghệ",
-        "desc":" t nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis p",
-        "image": ["http://baochinhphu.vn/Uploaded/nguyenthikimhue/2020_10_01/1579299883000_d7ebe85f7b9238e5e7e80b29932e2b3c.jpg", "https://gotrangtri.vn/wp-content/uploads/2018/12/di-san-van-hoa-phi-vat-the.jpg"]
+        "name_vi": "Dân ca Ví, Giặm Nghệ Tĩnh",
+        "name_en": "ultricies nis",
+        "desc_vi":" Dân ca Ví, Giặm Nghệ Tĩnh là hai lối hát dân ca không có nhạc đệm, do cộng đồng hai tỉnh Nghệ An và Hà Tĩnh sáng tạo, lưu truyền trong quá trình lao động sản xuất và gắn bó chặt chẽ với đời sống sinh hoạt của cộng đồng dân cư xứ Nghệ",
+        "desc_en":" t nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis p",
+        "image": ["http://baochinhphu.vn/Uploaded/nguyenthikimhue/2020_10_01/1579299883000_d7ebe85f7b9238e5e7e80b29932e2b3c.jpg", "https://gotrangtri.vn/wp-content/uploads/2018/12/di-san-van-hoa-phi-vat-the.jpg"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "10", 
-        "name": "Nghi lễ và trò chơi kéo co",
-        "title": "m semper liber",
-        "description":" Tại Việt Nam, nghi lễ và trò chơi kéo co tập trung ở vùng trung du, Đồng bằng sông Hồng và Bắc Trung Bộ với trung tâm là các tỉnh Vĩnh Phúc, Bắc Ninh và thành phố Hà Nội. Bên cạnh đó, di sản còn được thực hành thường xuyên bởi các tộc người ở miền núi phía Bắc như người Tày, người Thái và người Giáy (Lào Cai) - vốn là những cư dân trồng lúa sớm trong lịch sử",
-        "desc":" Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi ",
-        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKG_sKZYqs90MjSRjvJTvi2l17wx5qJerGGw&usqp=CAU", "https://vnanet.vn/Data/Articles/2019/11/19/4195234/vna_potal_ky_niem_14_nam_ngay_di_san_van_hoa_viet_nam_2311_093812445_stand.jpg"]
+        "name_vi": "Nghi lễ và trò chơi kéo co",
+        "name_en": "m semper liber",
+        "desc_vi":" Tại Việt Nam, nghi lễ và trò chơi kéo co tập trung ở vùng trung du, Đồng bằng sông Hồng và Bắc Trung Bộ với trung tâm là các tỉnh Vĩnh Phúc, Bắc Ninh và thành phố Hà Nội. Bên cạnh đó, di sản còn được thực hành thường xuyên bởi các tộc người ở miền núi phía Bắc như người Tày, người Thái và người Giáy (Lào Cai) - vốn là những cư dân trồng lúa sớm trong lịch sử",
+        "desc_en":" Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi ",
+        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKG_sKZYqs90MjSRjvJTvi2l17wx5qJerGGw&usqp=CAU", "https://vnanet.vn/Data/Articles/2019/11/19/4195234/vna_potal_ky_niem_14_nam_ngay_di_san_van_hoa_viet_nam_2311_093812445_stand.jpg"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "11", 
-        "name": "Kéo co",
-        "title": "sit amet adipiscing ",
-        "description":"ộ với trung tâm là các tỉnh Vĩnh Phúc, Bắc Ninh và thành phố Hà Nội. Bên cạnh đó, di sản còn được thực hành thường xuyên bởi các tộc người ở m",
-        "desc":" nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum sempe",
-        "image": ["https://file1.dangcongsan.vn/DATA/0/2017/06/_le_hoi_kate6-09_52_54_145.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfHt_0iqYx07Xj9wCr0BJl81x0hwVx5JXZA&usqp=CAU"]
+        "name_vi": "Kéo co",
+        "name_en": "sit amet adipiscing ",
+        "desc_vi":"ộ với trung tâm là các tỉnh Vĩnh Phúc, Bắc Ninh và thành phố Hà Nội. Bên cạnh đó, di sản còn được thực hành thường xuyên bởi các tộc người ở m",
+        "desc_en":" nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum sempe",
+        "image": ["https://file1.dangcongsan.vn/DATA/0/2017/06/_le_hoi_kate6-09_52_54_145.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkfHt_0iqYx07Xj9wCr0BJl81x0hwVx5JXZA&usqp=CAU"],
+        "link_detail" : "https://www.facebook.com/"
     },
     {
         "id": "12", 
-        "name": "Thờ Mẫu Tam phủ",
-        "title": "Maecenas nec",
-        "description":"Tín ngưỡng thờ Mẫu Tam phủ của người Việt là sự hỗn dung tôn giáo bản địa của người Việt và một số yếu tố của tôn giáo du nhập như Đạo giáo, Phật giáo.",
-        "desc":"Tín ngưỡng thờ Mẫu Tam phủ của người Việt là sự hỗn dung tôn giáo bản địa của người Việt và một số yếu tố của tôn giáo du nhập như Đạo giáo, Phật giáo.",
-        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0fgxMBqcfMip4hgCUtvtsgMv34wEHirh3A&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZo0RIhx6rRcFhXFOg8KGQewMOardZ7llJw&usqp=CAU"]
+        "name_vi": "Thờ Mẫu Tam phủ",
+        "name_en": "Maecenas nec",
+        "desc_vi":"Tín ngưỡng thờ Mẫu Tam phủ của người Việt là sự hỗn dung tôn giáo bản địa của người Việt và một số yếu tố của tôn giáo du nhập như Đạo giáo, Phật giáo.",
+        "desc_en":"Tín ngưỡng thờ Mẫu Tam phủ của người Việt là sự hỗn dung tôn giáo bản địa của người Việt và một số yếu tố của tôn giáo du nhập như Đạo giáo, Phật giáo.",
+        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0fgxMBqcfMip4hgCUtvtsgMv34wEHirh3A&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZo0RIhx6rRcFhXFOg8KGQewMOardZ7llJw&usqp=CAU"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "13", 
-        "name": " Nghệ thuật Bài chòi",
-        "title": " ante tincidunt",
-        "description":"Nghệ thuật Bài Chòi Trung Bộ Việt Nam (ở các tỉnh Quảng Bình, Quảng Trị, Thừa Thiên Huế, Quảng Nam, Quảng Ngãi, Bình Định, Phú Yên, Khánh Hòa và Đà Nẵng) ra đời từ nhu cầu liên lạc với nhau giữa các chòi canh trên nương rẫ",
-        "desc":" in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies",
-        "image": ["https://baothanhhoa.vn/thumbnail/news/mot-kho-tang-di-san-van-hoa-phi-vat-the-giau-gia-tri-di2119d178d5213020t87346l0.jpg", "https://image.phunuonline.com.vn/fckeditor/upload/2020/20201031/images/3-di-san-van-hoa-phi-vat-the-_611604125730.png"]
+        "name_vi": " Nghệ thuật Bài chòi",
+        "name_en": " ante tincidunt",
+        "desc_vi":"Nghệ thuật Bài Chòi Trung Bộ Việt Nam (ở các tỉnh Quảng Bình, Quảng Trị, Thừa Thiên Huế, Quảng Nam, Quảng Ngãi, Bình Định, Phú Yên, Khánh Hòa và Đà Nẵng) ra đời từ nhu cầu liên lạc với nhau giữa các chòi canh trên nương rẫ",
+        "desc_en":" in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies",
+        "image": ["https://baothanhhoa.vn/thumbnail/news/mot-kho-tang-di-san-van-hoa-phi-vat-the-giau-gia-tri-di2119d178d5213020t87346l0.jpg", "https://image.phunuonline.com.vn/fckeditor/upload/2020/20201031/images/3-di-san-van-hoa-phi-vat-the-_611604125730.png"],
+        "link_detail" : "https://trealet.com/streamline?tr=99450274157953025"
     },
     {
         "id": "14", 
-        "name": "Hát Then của người Tày-Nùng-Thái",
-        "title": "venenatis faucibus",
-        "description":"Hát Then là một loại hình diễn xướng dân gian tổng hợp gồm: ca, nhạc, múa và diễn trò. Thực hành Then là nghi lễ không thể thiếu trong đời sống tâm linh của  người Tày, Nùng, Thái, phản ánh quan niệm của họ về con người, thế giới tự nhiên và vũ trụ.",
-        "desc":" vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum",
-        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIPjsoNBk5oH3HPLkQIhNI36M5cjrQ9naZQ&usqp=CAU", "https://toquoc.mediacdn.vn/280518851207290880/2021/12/15/xoe-thai-duoc-unesco-ghi-danh-vao-danh-sach-di-san-van-hoa-phi-vat-the-14-1639570101768633441147.jpg"]
+        "name_vi": "Hát Then của người Tày-Nùng-Thái",
+        "name_en": "venenatis faucibus",
+        "desc_vi":"Hát Then là một loại hình diễn xướng dân gian tổng hợp gồm: ca, nhạc, múa và diễn trò. Thực hành Then là nghi lễ không thể thiếu trong đời sống tâm linh của  người Tày, Nùng, Thái, phản ánh quan niệm của họ về con người, thế giới tự nhiên và vũ trụ.",
+        "desc_en":" vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum",
+        "image": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIPjsoNBk5oH3HPLkQIhNI36M5cjrQ9naZQ&usqp=CAU", "https://toquoc.mediacdn.vn/280518851207290880/2021/12/15/xoe-thai-duoc-unesco-ghi-danh-vao-danh-sach-di-san-van-hoa-phi-vat-the-14-1639570101768633441147.jpg"],
+        "link_detail" : "https://trealet.com/"
     }
 ]

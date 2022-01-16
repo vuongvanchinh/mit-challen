@@ -39,7 +39,7 @@
                     <div class="translate_wrapper">
                         <div class="current_lang">
                             <div class="lang">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1280px-Flag_of_Vietnam.svg.png">
+                                <img src="img/vi-flag.png">
                                 <span class="lang-txt">VI</span> 
                                 <span class="fa fa-chevron-down chevron"></span>
                             </div>
@@ -47,16 +47,15 @@
                         
                         <div class="more_lang">
                             <div class="lang" data-value='EN'>
-                                <img src="https://w7.pngwing.com/pngs/368/939/png-transparent-flag-of-england-flag-of-the-united-kingdom-flag-of-great-britain-england-flag-world-flag-of-the-united-states.png">
+                                <img src="img/en-flag.png">
                                 <span class="lang-txt">English<span> (EN)</span></span>      
                             </div>
                             
                             <div class="lang selected" data-value='VI'>
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1280px-Flag_of_Vietnam.svg.png">
+                                <img src="img/vi-flag.png">
                                 <span class="lang-txt">VietNam<span> (VI)</span></span>      
                             </div>
                         </div>
-
                     </div>
                 </div>
         </header>
@@ -68,7 +67,7 @@
                             foreach($data as $x => $val) {
                                 echo "<div class='tl__line'>",
                                 "<div class='tl__line__index'>",$x + 1,"</div>",
-                                "<div class='ttl-title'><p><span class='vi'>",$val['name'],"</span><span class='en'>",$val['title'],"</span></p></div>"
+                                "<div class='ttl-title'><p><span class='vi'>",$val['name_vi'],"</span><span class='en'>",$val['name_en'],"</span></p></div>"
                                 ,"</div>";
                             }
                         ?> 
@@ -84,19 +83,26 @@
                         <div class="title-info-wrap">
                             <?php
                                 foreach($data as $x => $val) {
-                                    echo "<h1 class='content-title '><span class='vi'>",$val['name'],"</span><span class='en'>",$val['title'],"</span></h1>";
+                                    echo "<h1 class='content-title '><span class='vi'>",$val['name_vi'],"</span><span class='en'>",$val['name_en'],"</span></h1>";
                                 }
                             ?> 
                         </div>
                         <div class="desc-wrap">
                             <?php
                                 foreach($data as $x => $val) {
-                                    echo "<p class='content-desc'><span class='vi'>",$val['description'],"</span><span class='en'>",$val['desc'],"</span></p>";
+                                    echo "<p class='content-desc'><span class='vi'>",$val['desc_vi'],"</span><span class='en'>",$val['desc_en'],"</span></p>";
                                 }
                             ?>
                         </div>
+
                         <div class="btn-wrap">
-                            <button class="discover--btn scale-0"><span class='vi'>Khám phá</span><span class='en'>Discover</span></button>
+                            <?php
+                                foreach($data as $x => $val) {
+                                    echo "<a href='",$val['link_detail'],"' target='_blank' class='btn-link'>
+                                            <button class='discover--btn scale-0'><span class='vi'>Khám phá</span><span class='en'>Discover</span></button>
+                                        </a>";
+                                }
+                            ?> 
                         </div>
                     </div>
 
@@ -109,7 +115,7 @@
                                     echo    "<div class='slide-item' data-slide-id='",$x ,"' data-img-bg='",$val['image'][1],"'>
                                                 <img src=",$val['image'][0],">
                                                 <div class='title-wrap'>
-                                                    <p class='card-text'><span class='vi'>",$val['name'],"</span><span class='en'>",$val['title'],"</span></p>
+                                                    <p class='card-text'><span class='vi'>",$val['name_vi'],"</span><span class='en'>",$val['name_en'],"</span></p>
                                                 </div>
                                             </div>";
                                 }
