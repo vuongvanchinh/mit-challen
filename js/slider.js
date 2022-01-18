@@ -1,3 +1,6 @@
+
+
+
 const slider = function () {
     let slides = document.querySelectorAll('.slide-item');
     let tlLine = document.querySelectorAll('.tl__line');
@@ -140,6 +143,7 @@ const slider_ver2 = () => {
 }
 
 $(document).ready(() => {
+  const popupContainer = $('.container')
   const discoverBtn = $('.discover--btn');
   const toggleTooltip = $('#toggle')
   const slide_container = $('.slide-items')
@@ -149,11 +153,13 @@ $(document).ready(() => {
   const btnLink = $('.btn-link')
   let curSlide = 0;
   let clicked = false;
+  const closePopup = $('.closePopup');
+
 
   /* lang*/
   
   $(document).click( function(e) {
-      $('.translate_wrapper, .more_lang').removeClass('active');     
+      $('.translate_wrapper, .more_lang').removeClass('active');   
   });
 
   $('.translate_wrapper .current_lang').click(function(e){    
@@ -206,7 +212,14 @@ $(document).ready(() => {
       })
     }
   }
-
+  discoverBtn.click((e) => {
+    e.stopPropagation();
+    popupContainer.addClass('active');
+    cursor([$('#container'),popupContainer],"default");
+  })
+  closePopup.click(()=> {
+    popupContainer.removeClass('active');
+  })
   const switchInfo = (slide, travel = 0) => {
     document.body.style.cursor ="wait";
     cursor([slides,tlLines,$('#container'), $('.slider__btn--right'), $('.slider__btn--left')],"wait")
@@ -229,9 +242,11 @@ $(document).ready(() => {
       $(`.content-title:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
         $(this).slideDown('slow');
       });
+      
       $(`.content-desc:nth-child(${slide + 1})`).animate({opacity: 1}, 'slow', function() {
         $(this).slideDown('slow');
       });
+
       setTimeout(() => {
         discoverBtn.removeClass('scale-0')
       },1500)
@@ -250,17 +265,19 @@ $(document).ready(() => {
     currentSlide.addClass('slide-item-fade-out')
     currentSlide.next().addClass('active')
 
+
+    if(changebg) {
+      const bg_link = currentSlide.next().data('img-bg')
+      // console.log(currentSlide.next().data('slide-id'))
+      $('#container').css({
+        backgroundImage: `url("${bg_link}")`
+      })
+    }
+    
     if(activeTl) {
       curSlide = currentSlide.next().data('slide-id');
       activeDot(curSlide)
       switchInfo(curSlide)
-    }
-
-    if(changebg) {
-      const bg_link = currentSlide.next().data('img-bg')
-      $('#container').css({
-        backgroundImage: `url("${bg_link}")`
-      })
     }
 
     setTimeout(() => {
@@ -357,15 +374,15 @@ const backgroundTravelTime = function(times, second, callback, callbackParam = 1
   let i = 0;    
   function timeLoop() {      
     setTimeout(function() {   
-      changeBg = i === (times - 1) && true;
+      changeBg = (i === (times - 1)) && true;
       callback(callbackParam,changeBg, false);
       i++;                   
-      if (i < times) {        
+      if (i < times) {
         timeLoop();            
       }                       
     }, second)
   }
   timeLoop(); 
 }
-              
+
 

@@ -1,14 +1,19 @@
 .header {
     background-color: transparent;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
     /* border: solid red; */
+    
 }
 
 .logo {
-    height: 50px;
+    position: relative;
+    top: 0px;
+    height: 60px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
 }
 
 img {

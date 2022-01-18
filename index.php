@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places </title>
+    <title>VIHEJO</title>
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
@@ -98,10 +98,13 @@
                         <div class="btn-wrap">
                             <?php
                                 foreach($data as $x => $val) {
-                                    echo "<a href='",$val['link_detail'],"' target='_blank' class='btn-link'>
-                                            <button class='discover--btn scale-0'>Khám phá</button>
-                                        </a>";
+                                    echo "<button class='discover--btn scale-0 btn-link'>Khám phá</button>";
                                 }
+                                // foreach($data as $x => $val) {
+                                //     echo "<a href='",$val['link_detail'],"' target='_blank' class='btn-link'>
+                                //             <button class='discover--btn scale-0'>Khám phá</button>
+                                //         </a>";
+                                // }
                             ?> 
                         </div>
                     </div>
@@ -130,6 +133,16 @@
             </div>
         </main>
     </div>
+
+    <div class="container" >
+        <div class="form">
+            <div class="form-popup">
+                <button class="closePopup" ><i class="fas fa-times"></i></button>
+                <iframe src="https://trealet.com/streamline?tr=123423234"  class="iframe" ></iframe>
+            </div>
+        </div>
+    </div>
+
     <script src="js/common.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/info.js"></script>

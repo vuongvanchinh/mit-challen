@@ -109,14 +109,14 @@
     height: 20%;
     bottom: 0;
     left: 0;
-    font-weight: 600;
-    padding: .5rem 2rem ;
+    font-weight: 500;
+    padding: .5rem .7rem ;
     box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
     background-color: rgba(0, 0, 0, 0.5);
-    /* background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%); */
-    box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.1175420168067223) 0%, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+    /* box-shadow: 0 0 15px rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0, 0.5); */
     overflow: hidden;
     display:flex;
     align-items:center;
